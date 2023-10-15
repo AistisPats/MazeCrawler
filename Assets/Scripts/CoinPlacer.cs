@@ -10,11 +10,13 @@ public class CoinPlacer : MonoBehaviour
     public int numOfCoins = 10;
     void Start()
     {
-        for(int i = 0; i < numOfCoins; i++)
+        int count = locations.Count;
+        for (int i = 0; i < numOfCoins; i++)
         {
-            int loc = Random.Range(0, locations.Count + 1);
+            int loc = Random.Range(0, count );
             Instantiate(Coin, locations[loc]);
             locations.RemoveAt(loc);
+            count--;
         }
     }
 

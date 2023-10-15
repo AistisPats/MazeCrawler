@@ -8,22 +8,11 @@ public class Health : MonoBehaviour
 {
     public string gameOver = "GameOverScene";
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Trap")
+        if(collision.gameObject.CompareTag("Trap"))
         {
-            SceneManager.LoadScene(gameOver);
+            SceneManager.LoadScene(gameOver, LoadSceneMode.Single);
         }
     }
 }
