@@ -62042,7 +62042,7 @@ GameObject:
   - component: {fileID: 1314262106}
   m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -62060,7 +62060,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveLimiter: 0.7
-  runSpeed: 20
+  runSpeed: 10
 --- !u!50 &1314262101
 Rigidbody2D:
   serializedVersion: 4
@@ -62195,8 +62195,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 519420032}
   m_Father: {fileID: 0}
